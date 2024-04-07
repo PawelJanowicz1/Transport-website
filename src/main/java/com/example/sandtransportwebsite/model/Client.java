@@ -2,7 +2,6 @@ package com.example.sandtransportwebsite.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "User")
 public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
