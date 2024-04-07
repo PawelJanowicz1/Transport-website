@@ -13,7 +13,7 @@ public class ClientController {
         this.clientService = clientService;
     }
     @PostMapping("/add")
-    public void creatingClient(String name, String lastName, String email, int phoneNumber){
+    public void creatingClient( String name, String lastName, String email, int phoneNumber){
         clientService.createClient(name, lastName, email, phoneNumber);
     }
     @GetMapping("/get/{id}")
@@ -24,4 +24,9 @@ public class ClientController {
     public void modifyClientInfo(@PathVariable Long id, String name, String lastName, String email, int phoneNumber){
         clientService.modifyClientInfo(id, name, lastName, email, phoneNumber);
     }
+    @DeleteMapping("/delete/{id}")
+    public void deleteClientInfo(@PathVariable Long id){
+        clientService.deleteClient(id);
+    }
+
 }
