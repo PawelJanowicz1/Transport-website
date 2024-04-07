@@ -12,6 +12,7 @@ public class ClientService {
     public ClientService(ClientRepository clientRepository) {
         this.clientRepository = clientRepository;
     }
+
     public void createClient(String name, String lastName, String email, int phoneNumber){
 Client client = new Client();
 client.setName(name);
