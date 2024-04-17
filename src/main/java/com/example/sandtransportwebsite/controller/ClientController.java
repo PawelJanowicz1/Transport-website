@@ -28,5 +28,4 @@ public class ClientController {
     public void deleteClientInfo(@PathVariable Long id){
         clientService.deleteClient(id);
     }
-
 }
