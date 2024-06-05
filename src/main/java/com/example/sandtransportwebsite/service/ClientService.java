@@ -1,39 +1,23 @@
 package com.example.sandtransportwebsite.service;
+
+import com.example.sandtransportwebsite.dto.CreateClient;
 import com.example.sandtransportwebsite.model.Client;
 import com.example.sandtransportwebsite.repository.ClientRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.util.Optional;
-
 @Service
+@RequiredArgsConstructor
 public class ClientService {
-    ClientRepository clientRepository;
 
-    public ClientService(ClientRepository clientRepository) {
-        this.clientRepository = clientRepository;
-    }
+    private final ClientRepository clientRepository;
 
-    public void createClient(String name, String lastName, String email, int phoneNumber){
-Client client = new Client();
-client.setName(name);
-client.setLastName(lastName);
-client.setEmail(email);
-client.setPhoneNumber(phoneNumber);
-clientRepository.save(client);
-    }
-    public Client getClientInfo(Long id){
-       return clientRepository.findById(id).orElse(null);
-    }
-    public void modifyClientInfo(Long id, String name, String lastName, String email, int phoneNumber){
-        Optional<Client> currentList = clientRepository.findById(id);
-        Client client = currentList.orElse(null);
-        client.setName(name);
-        client.setLastName(lastName);
-        client.setEmail(email);
-        client.setPhoneNumber(phoneNumber);
+    public void createClient(CreateClient createClient){
+        final var client = new Client(createClient.firstName(), createClient.lastName(), createClient.email(), createClient.phoneNumber());
         clientRepository.save(client);
     }
-    public void deleteClient(Long id){
-        clientRepository.deleteById(id);
+
+    public Client getMyInfo(Long id){
+       return clientRepository.getClientById(id);
     }
 }
