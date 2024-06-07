@@ -1,11 +1,13 @@
 package com.example.sandtransportwebsite.model;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
+@Data
 @Table(name = "clients")
 public class Client {
     @Id
