@@ -1,15 +1,74 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Client Confirmation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprzedaż Piasku</title>
+    <link href="/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-<h1>Client Info</h1>
-<p th:text="${message}"></p>
-<p th:text="'Name: ' + ${name}"></p>
-<p th:text="'Last Name: ' + ${lastName}"></p>
-<p th:text="'Email: ' + ${email}"></p>
-<p th:text="'Phone Number: ' + ${phoneNumber}"></p>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="navbar-brand">Transport trójmiasto</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#onas">O nas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#galeria">Galeria</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#cennik">Cennik</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#kontakt">Kontakt z nami</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="jumbotron">
+        <h1 class="display-4">Witamy na naszej stronie transportowej!</h1>
+        <p class="lead">Transport najwyższej jakości.</p>
+        <hr class="my-4">
+        <p>Oferujemy również dowóz piasku do różnych zastosowań, w konkurencyjnych cenach!</p>
+    </div>
+
+    <section id="onas" class="my-5">
+        <h2>O nas</h2>
+        <p>Nasza firma działa na rynku od wielu lat. Zapewniamy najwyższą jakość piasku i profesjonalną obsługę.</p>
+    </section>
+
+    <section id="galeria" class="my-5">
+        <h2>Galeria</h2>
+        <p>Zobacz nasze produkty w akcji.</p>
+    </section>
+
+    <section id="cennik" class="my-5">
+        <h2>Cennik</h2>
+        <p>Nasze ceny są dostosowane do Twoich potrzeb. Skontaktuj się z nami, aby uzyskać więcej informacji.</p>
+    </section>
+
+    <section id="kontakt" class="my-5">
+        <h2>Kontakt z nami</h2>
+        <p>Jesteśmy do Twojej dyspozycji. Skontaktuj się z nami telefonicznie lub przez e-mail.</p>
+        <address>
+            <strong>Piotr Janowicz</strong><br>
+            Juliusza Słowackiego 249<br>
+            80-369 Gdańsk<br>
+            Tel: +48 609459833<br>
+            Email: piotr246@wp.pl
+        </address>
+    </section>
+
+</div>
+<script src="/static/js/script.js"></script>
+<script src="/static/js/bootstrap.bundle.js"></script>
+<script src="/static/js/bootstrap.js"></script>
 </body>
 </html>
