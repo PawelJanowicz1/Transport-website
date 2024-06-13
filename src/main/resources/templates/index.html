@@ -56,7 +56,22 @@
 
     <section id="kontakt" class="my-5">
         <h2>Kontakt z nami</h2>
-        <p>Jesteśmy do Twojej dyspozycji. Skontaktuj się z nami telefonicznie lub przez e-mail.</p>
+        <p>Jesteśmy do Twojej dyspozycji. Skontaktuj się z nami telefonicznie lub poprzez formularz poniżej:</p>
+        <form id="contactForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Imię</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Numer telefonu (Opcjonalnie)</label>
+                <input type="tel" class="form-control" id="phoneNumber">
+            </div>
+            <button type="submit" class="btn btn-primary">Wyślij</button>
+        </form>
         <address>
             <strong>Piotr Janowicz</strong><br>
             Juliusza Słowackiego 249<br>
