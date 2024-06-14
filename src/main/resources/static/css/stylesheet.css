@@ -1,0 +1,20 @@
+.navbar-transparent {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.blur {
+    filter: blur(10px);
+}
+
+.background-image {
+    background-color: #aa5709;
+}
+
+.background-image::before {
+    background-color: inherit;
+    filter: blur(10px);
+}
