@@ -1,0 +1,41 @@
+.navbar-transparent {
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+}
+
+.navbar-transparent::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(189, 131, 66, 1);
+    filter: blur(8px);
+    z-index: -1;
+}
+
+
+.blur {
+    filter: blur(10px);
+}
+
+.background-image {
+    background-color: #aa5709;
+}
+
+.background-image::before {
+    background-color: inherit;
+    filter: blur(10px);
+}
+
+.bigger-font {
+    font-size: 25px;
+    font-family: Copperplate;
+}
+
+.center {
+    text-align: center;
+}
