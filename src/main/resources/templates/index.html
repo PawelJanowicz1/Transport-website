@@ -57,16 +57,20 @@
         <div style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #c36410; border-radius: 10px; color: white;">
         <form id="contactForm">
             <div class="mb-3">
-                <label for="name" class="form-label">Imię</label>
+                <label for="name" class="form-label">Imię:</label>
                 <input type="text" class="form-control" id="name" required>
             </div>
             <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
+                <label for="email" class="form-label">Email:</label>
                 <input type="email" class="form-control" id="email" required>
             </div>
             <div class="mb-3">
-                <label for="phoneNumber" class="form-label">Numer telefonu (Opcjonalnie)</label>
+                <label for="phoneNumber" class="form-label">Numer telefonu: (Opcjonalnie)</label>
                 <input type="tel" class="form-control" id="phoneNumber">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Wiadomość:</label>
+                <textarea id="message" class="form-control" style="height: 150px; width: 100%; resize: none" required></textarea>
             </div>
             <button type="submit" class="btn btn-warning">Wyślij</button>
         </form>
