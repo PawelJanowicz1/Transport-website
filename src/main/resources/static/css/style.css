@@ -33,9 +33,21 @@
 
 .bigger-font {
     font-size: 25px;
-    font-family: Copperplate;
+    font-family: "Copperplate", Arial, Serif;
 }
 
 .center {
     text-align: center;
+}
+
+.font-family {
+    font-family: "Copperplate", "Arial", serif;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
 }
