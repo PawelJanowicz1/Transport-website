@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contactForm');
-    contactForm.addEventListener('submit', (event) => {
+    contactForm.addEventListener('submit', async (event) => { // Dodano 'async' tutaj
         event.preventDefault();
-        sendContactForm();
+        await sendContactForm();
     });
 });
+
 
 function validateForm(name, email, phoneNumber, message) {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
