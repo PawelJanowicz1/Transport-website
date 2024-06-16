@@ -24,11 +24,11 @@ public class Client {
 
     @Column
     @NotBlank
-    @Email(message = "Email should be valid")
+    @Email
     private String email;
 
-    @Pattern(regexp = "^\\d{9}$|^Numer telefonu nie został podany$", message = "Phone number should be 9 digits or 'Numer telefonu nie został podany'")
     @Column
+    @NotBlank
     private String phoneNumber;
 
     @Column

@@ -12022,36 +12022,102 @@ textarea.form-control-lg {
   .d-print-inline {
     display: inline !important;
   }
+
   .d-print-inline-block {
     display: inline-block !important;
   }
+
   .d-print-block {
     display: block !important;
   }
+
   .d-print-grid {
     display: grid !important;
   }
+
   .d-print-inline-grid {
     display: inline-grid !important;
   }
+
   .d-print-table {
     display: table !important;
   }
+
   .d-print-table-row {
     display: table-row !important;
   }
+
   .d-print-table-cell {
     display: table-cell !important;
   }
+
   .d-print-flex {
     display: flex !important;
   }
+
   .d-print-inline-flex {
     display: inline-flex !important;
   }
+
   .d-print-none {
     display: none !important;
   }
 }
+
+.navbar-transparent {
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+}
+
+.navbar-transparent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(189, 131, 66, 1);
+  filter: blur(8px);
+  z-index: -1;
+}
+
+
+.blur {
+  filter: blur(10px);
+}
+
+.background-image {
+  background-color: #aa5709;
+}
+
+.background-image::before {
+  background-color: inherit;
+  filter: blur(10px);
+}
+
+.bigger-font {
+  font-size: 25px;
+  font-family: "Copperplate", Arial, Serif;
+}
+
+.center {
+  text-align: center;
+}
+
+.font-family {
+  font-family: "Copperplate", "Arial", serif;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #c36410;
+  border-radius: 10px;
+  color: white;
+}
+
 
 /*# sourceMappingURL=bootstrap.css.map */

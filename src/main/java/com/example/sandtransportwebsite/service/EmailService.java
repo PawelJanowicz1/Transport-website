@@ -1,5 +1,6 @@
 package com.example.sandtransportwebsite.service;
 
+import com.example.sandtransportwebsite.dto.ContactRequest;
 import com.example.sandtransportwebsite.model.Client;
 import com.example.sandtransportwebsite.repository.ClientRepository;
 import lombok.RequiredArgsConstructor;
@@ -23,10 +24,15 @@ public class EmailService {
     @Value("${admin.email}")
     private String adminEmail;
 
-    public ResponseEntity<?> sendSimpleEmail(String name, String email, String phoneNumber, String message) {
+    public ResponseEntity<?> sendSimpleEmail(ContactRequest contactRequest) {
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
         simpleMailMessage.setFrom(fromEmail);
         simpleMailMessage.setTo(adminEmail);
+
+        String name = contactRequest.name();
+        String email = contactRequest.email();
+        String phoneNumber = contactRequest.phoneNumber();
+        String message = contactRequest.message();
 
         String subject = "Prośba o kontakt od " + name;
 
@@ -36,8 +42,8 @@ public class EmailService {
         if(phoneNumber != null && !phoneNumber.isEmpty()) {
             sb.append("Numer Telefonu: ").append(phoneNumber).append("\n");
         }else {
-            phoneNumber = "Numer telefonu nie został podany";
-            sb.append("Numer Telefonu nie został podany").append("\n");
+            phoneNumber = "Klient nie podał numeru telefonu";
+            sb.append(phoneNumber).append("\n");
         }
         sb.append(("Message: ")).append(message).append("\n");
         simpleMailMessage.setSubject(subject);
