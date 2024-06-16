@@ -39,16 +39,25 @@ async function sendContactForm() {
         return;
     }
 
+    const payload = {
+        name: name,
+        email: email,
+        phoneNumber: phoneNumber ? phoneNumber : null,
+        message: message
+    };
+
     try {
-        const response = await fetch(`http://localhost:8064/email/send-email?name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&phoneNumber=${encodeURIComponent(phoneNumber)}&message=${encodeURIComponent(message)}`, {
+        const response = await fetch('http://localhost:8064/email/send-email', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-            }
+                'Content-Type': 'application/json; charset=UTF-8',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(payload)
         });
 
         if (response.ok) {
-            document.getElementById('contactFormContainer').style.display = 'none';
+            document.getElementById('contactForm').style.display = 'none';
             document.getElementById('successMessage').style.display = 'block';
         } else {
             const errorMessage = await response.text();
