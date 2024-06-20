@@ -5,7 +5,7 @@ Users can browse through the gallery of product images.
 Users can leave their details in a contact form or get in touch via phone.
 Users can view the company's address.
 
-## Used Technologies:
+## :hammer_and_wrench: Used Technologies
 
 * Spring (Boot, Data)
 * JPA / Hibernate
