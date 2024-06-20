@@ -8,9 +8,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/email")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "localhost:8064")
+@RequestMapping("/email")
+@CrossOrigin(origins = "https://dobrypiasek.pl")
 public class EmailController {
 
     private final EmailService emailService;
