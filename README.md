@@ -1,4 +1,4 @@
-## :bookmark_tabs: About This Project ( WORK IN PROGRESS )
+## :bookmark_tabs: About This Project (:hammer_and_wrench: WORK IN PROGRESS :hammer_and_wrench:)
 
 Users can read information about the company.
 Users can browse through the gallery of product images.
