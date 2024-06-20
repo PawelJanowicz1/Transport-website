@@ -1,4 +1,4 @@
-## :bookmark_tabs: About This Project
+## :bookmark_tabs: About This Project ( WORK IN PROGRESS )
 
 Users can read information about the company.
 Users can browse through the gallery of product images.
