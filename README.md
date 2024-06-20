@@ -1,3 +1,10 @@
+## :bookmark_tabs: About This Project
+
+Users can read information about the company.
+Users can browse through the gallery of product images.
+Users can leave their details in a contact form or get in touch via phone.
+Users can view the company's address.
+
 ## Used Technologies:
 
 * Spring (Boot, Data)
@@ -9,23 +16,16 @@
 * Maven
 * Lombok
 
-## :bookmark_tabs: About This Project
-
-Users can read information about the company.
-Users can browse through the gallery of product images.
-Users can leave their details in a contact form or get in touch via phone.
-Users can view the company's address.
-
 ## :camera: Screenshots
 
 Landing page      
-:------------------------:|:-------------------------:
+
 ![Menu page](src/main/resources/static/images/landing-page.png)
 
 About    
-:------------------------:|:-------------------------:
+
 ![Checkout](src/main/resources/static/images/about.png)
 
 Contact form    
-:------------------------:|:-------------------------:
+
 ![Login page](src/main/resources/static/images/form.png)
