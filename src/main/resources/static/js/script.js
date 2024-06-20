@@ -48,7 +48,7 @@ async function sendContactForm() {
     };
 
     try {
-        const response = await fetch('http://localhost:8064/email/send-email', {
+        const response = await fetch('https://dobrypiasek.pl/email/send-email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json; charset=UTF-8',
