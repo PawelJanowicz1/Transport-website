@@ -9,10 +9,10 @@ Users can view the company's address.
 
 * Spring (Boot, Data)
 * JPA / Hibernate
-* MySqk
-* Javascruot
+* MySql
+* Javascript
 * HTML
-* Bootstrap, CSS
+* CSS, Bootstrap
 * Maven
 * Lombok
 
