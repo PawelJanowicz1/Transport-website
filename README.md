@@ -28,7 +28,7 @@ Landing page
 
 ![Menu page](src/main/resources/static/images/landing-page.png)
 
-About    
+About us   
 
 ![Checkout](src/main/resources/static/images/about.png)
 
