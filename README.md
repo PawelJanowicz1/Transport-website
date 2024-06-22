@@ -26,12 +26,20 @@ You can easily access this website at www.dobrypiasek.pl
 
 Landing page      
 
-![Menu page](src/main/resources/static/images/landing-page.png)
+![Landing page](src/main/resources/static/images/landing-page.png)
 
 About us   
 
-![Checkout](src/main/resources/static/images/about.png)
+![About us](src/main/resources/static/images/about.png)
+
+What we offer
+
+![What we offer](src/main/resources/static/images/offer.png)
+
+Pricing
+
+![Pricing](src/main/resources/static/images/pricing.png)
 
 Contact form    
 
-![Login page](src/main/resources/static/images/form.png)
+![Contaact foorm](src/main/resources/static/images/form.png)
