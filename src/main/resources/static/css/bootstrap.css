@@ -12221,4 +12221,31 @@ font-size: 12px;
 .bigger-font {
   font-size: 1.2em;
 }
-/*# sourceMappingURL=bootstrap.css.map */
+
+.navbar-custom {
+  background: #aa5709;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+.navbar-custom .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: bold;
+  transition: transform 0.2s, color 0.2s;
+}
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: #dd8b15;
+  transform: translateY(-5px);
+}
+.navbar-custom .navbar-brand {
+  font-weight: bold;
+  color: #d9534f;
+}
+.bigger-font {
+  font-size: 1.2em;
+}
+
+.custom-border-2 {
+  border-bottom: 2px double #c36410;
+}
