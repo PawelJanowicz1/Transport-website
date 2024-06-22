@@ -12114,7 +12114,7 @@ textarea.form-control-lg {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #c36410;
+  background-color: gray(0);
   border-radius: 10px;
   color: white;
 }
@@ -12155,7 +12155,7 @@ textarea.form-control-lg {
 }
 
 .btn-custom {
-  background-color: #007bff;
+  background-color: #c36410;
   color: white;
   border-radius: 25px;
   padding: 0.75rem 1.5rem;
@@ -12163,7 +12163,7 @@ textarea.form-control-lg {
 }
 
 .btn-custom:hover {
-  background-color: #0056b3;
+  background-color: #dd8b15;
 }
 
 .sizing {
@@ -12200,5 +12200,25 @@ font-size: 12px;
 
 .success-style {
   display: none; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #c36410; border-radius: 10px; color: white;
+}
+
+.table-color {
+  background-color: #ffffff;
+}
+
+.custom-border {
+  border: 3px solid #c36410;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.hover-lift {
+  transition: transform 0.2s;
+}
+.hover-lift:hover {
+  transform: translateY(-5px);
+}
+.bigger-font {
+  font-size: 1.2em;
 }
 /*# sourceMappingURL=bootstrap.css.map */
