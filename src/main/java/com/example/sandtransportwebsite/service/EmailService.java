@@ -37,15 +37,15 @@ public class EmailService {
         String subject = "Prośba o kontakt od " + name;
 
         StringBuilder sb = new StringBuilder();
-        sb.append("Imię: ").append(name).append("\n");
-        sb.append(("Email: ")).append(email).append("\n");
+        sb.append("Imię:  ").append(name).append("\n");
+        sb.append(("Email:  ")).append(email).append("\n");
         if(phoneNumber != null && !phoneNumber.isEmpty()) {
-            sb.append("Numer Telefonu: ").append(phoneNumber).append("\n");
+            sb.append("Numer Telefonu:  ").append(phoneNumber).append("\n");
         }else {
             phoneNumber = "Klient nie podał numeru telefonu";
             sb.append(phoneNumber).append("\n");
         }
-        sb.append(("Message: ")).append(message).append("\n");
+        sb.append(("Wiadomość:  ")).append(message).append("\n");
         simpleMailMessage.setSubject(subject);
         simpleMailMessage.setText(sb.toString());
         mailSender.send(simpleMailMessage);
