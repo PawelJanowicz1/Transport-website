@@ -12166,5 +12166,39 @@ textarea.form-control-lg {
   background-color: #0056b3;
 }
 
+.sizing {
+font-size: 12px;
+}
 
+.card-info {
+  width: 80%; padding: 20px;
+}
+
+.about {
+  font-size: 18px;
+}
+
+.card-height {
+  height: 400px;
+}
+
+.pricing {
+  width: 80%; padding: 20px;
+}
+
+.pricing-top {
+  font-size: 24px; width: 50%;
+}
+
+.pricing-row {
+  font-size: 18px;
+}
+
+.textarea-style {
+  height: 150px; width: 100%; resize: none
+}
+
+.success-style {
+  display: none; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #c36410; border-radius: 10px; color: white;
+}
 /*# sourceMappingURL=bootstrap.css.map */
