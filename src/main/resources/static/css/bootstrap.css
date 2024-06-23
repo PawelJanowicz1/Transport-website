@@ -14102,3 +14102,21 @@ address a:active {
     padding: 20px;
     background-color: #ffffff;
 }
+
+@media (max-width: 1024px) {
+    .navbar-mobile .nav-link {
+        transition: none !important;
+        transform: none !important;
+        color: inherit !important;
+    }
+
+    .navbar-mobile .nav-link:hover,
+    .navbar-mobile .nav-link:focus,
+    .navbar-mobile .nav-link:active {
+        color: inherit !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+        outline: none !important;
+        text-decoration: none !important;
+    }
+}
