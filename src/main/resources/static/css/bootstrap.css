@@ -4579,7 +4579,8 @@ textarea.form-control-lg {
     }
 
     .navbar-expand-sm .navbar-toggler {
-        display: none; !important;
+        display: none;
+    !important;
     }
 
     .navbar-expand-sm .offcanvas {
@@ -4689,7 +4690,8 @@ textarea.form-control-lg {
 
     .navbar-expand-lg .navbar-collapse {
         display: flex !important;
-        flex-basis: auto; !important;
+        flex-basis: auto;
+    !important;
     }
 
     .navbar-expand-lg .navbar-toggler {
@@ -13902,13 +13904,6 @@ textarea.form-control-lg {
     z-index: 100;
 }
 
-@media (max-width: 575px) {
-    .navbar-custom .navbar-nav .nav-link {
-        font-size: 0.6rem;
-        padding: 0.2rem;
-    }
-}
-
 .navbar-custom .navbar-nav .nav-link:hover {
     color: #dd8b15;
     transform: translateY(-5px);
@@ -13985,4 +13980,74 @@ address a:active {
     color: inherit;
     text-decoration: none;
     outline: none;
+}
+
+@media (min-width: 992px) {
+    .d-lg-none {
+        display: none !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .d-lg-none {
+        display: flex !important;
+    }
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: bold;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #dd8b15;
+    transform: translateY(-5px);
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: bold;
+    color: #d9534f;
+}
+
+@media (max-width: 575px) {
+    .navbar-custom .navbar-nav .nav-link {
+        font-size: 4vw !important;
+        margin-right: 0.5rem !important;
+        margin-left: 0.5rem !important;
+    }
+}
+
+@media (max-width: 575px) and (orientation: landscape) {
+    .navbar-custom .navbar-nav .nav-link {
+        font-size: 3vw !important;
+        margin-right: 2rem !important;
+        margin-left: 2rem !important;
+    }
+}
+
+
+.navbar-custom .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+.navbar-mobile .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar-mobile .nav-link {
+    font-size: 4vw;
+    padding: 0.1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+@media (max-width: 575px) and (orientation: landscape) {
+    .navbar-mobile .nav-link {
+        font-size: 3vw;
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
 }
