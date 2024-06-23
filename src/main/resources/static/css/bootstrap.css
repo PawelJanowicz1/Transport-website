@@ -1318,6 +1318,13 @@ progress {
         }
     }
 
+    @media (min-width: 993px) {
+        .col-md-4 {
+            flex: 0 0 auto;
+            width: 33.333%;
+        }
+    }
+
     .col-md-5 {
         flex: 0 0 auto;
         width: 41.66666667%;
