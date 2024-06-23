@@ -13938,13 +13938,13 @@ textarea.form-control-lg {
         hyphens: auto;
         box-sizing: border-box;
         text-align: justify;
-        font-size: 3.27vw;
+        font-size: 3.1vw;
     }
 }
 
 @media (min-width: 431px) and (max-width: 667px) and (orientation: landscape) {
     .card-text-2.sizing {
-        font-size: 2.43vw;
+        font-size: 2.40vw;
     }
 }
 
