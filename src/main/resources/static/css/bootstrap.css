@@ -13954,6 +13954,12 @@ textarea.form-control-lg {
     }
 }
 
+@media (min-width: 951px) {
+    .card-text-2.sizing {
+        font-size: 0.95vw;
+    }
+}
+
 .card-body-2 {
     display: flex;
     flex-direction: column;
@@ -14119,4 +14125,8 @@ address a:active {
         outline: none !important;
         text-decoration: none !important;
     }
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    font-size: 2.2vw;
 }
