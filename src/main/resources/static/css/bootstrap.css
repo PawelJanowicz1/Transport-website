@@ -4460,10 +4460,12 @@ textarea.form-control-lg {
     --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
     --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
     display: flex;
-    flex-direction: column;
+    flex-direction: row !important;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+    width: 100%;
+    justify-content: center;
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
@@ -4487,9 +4489,13 @@ textarea.form-control-lg {
 }
 
 .navbar-collapse {
-    flex-basis: 100%;
+    justify-content: center !important;
+    flex-direction: row !important;
+    flex-basis: auto;
     flex-grow: 1;
     align-items: center;
+    width: 100%;
+    display: flex !important;
 }
 
 .navbar-toggler {
@@ -4564,7 +4570,7 @@ textarea.form-control-lg {
     }
 
     .navbar-expand-sm .navbar-toggler {
-        display: none;
+        display: none; !important;
     }
 
     .navbar-expand-sm .offcanvas {
@@ -4674,7 +4680,7 @@ textarea.form-control-lg {
 
     .navbar-expand-lg .navbar-collapse {
         display: flex !important;
-        flex-basis: auto;
+        flex-basis: auto; !important;
     }
 
     .navbar-expand-lg .navbar-toggler {
@@ -13901,10 +13907,11 @@ textarea.form-control-lg {
     z-index: 100;
 }
 
-.navbar-custom .navbar-nav .nav-link {
-    color: rgba(0, 0, 0, 0.75);
-    font-weight: bold;
-    transition: transform 0.2s, color 0.2s;
+@media (max-width: 575px) {
+    .navbar-custom .navbar-nav .nav-link {
+        font-size: 0.6rem;
+        padding: 0.2rem;
+    }
 }
 
 .navbar-custom .navbar-nav .nav-link:hover {
