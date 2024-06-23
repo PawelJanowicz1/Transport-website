@@ -48,7 +48,7 @@ async function sendContactForm() {
     };
 
     try {
-        const response = await fetch('https://dobrypiasek.pl/email/send-email', {
+        const response = await fetch('http://localhost:8065/email/send-email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json; charset=UTF-8',
@@ -59,7 +59,8 @@ async function sendContactForm() {
 
         if (response.ok) {
             document.getElementById('contactForm').style.display = 'none';
-            document.getElementById('successMessage').style.display = 'block';
+            document.getElementsByClassName('successMessage')[0].style.display = 'block';
+            document.getElementsByClassName('form-container')[0].classList.remove('custom-border');
         } else {
             const errorMessage = await response.text();
             alert('Błąd podczas wysyłania emaila: ' + errorMessage);

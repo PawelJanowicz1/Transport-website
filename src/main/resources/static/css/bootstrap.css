@@ -13863,20 +13863,6 @@ textarea.form-control-lg {
     resize: none
 }
 
-.success-style {
-    display: none;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #c36410;
-    border-radius: 10px;
-    color: white;
-    border: 2px solid #a65208;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-
 .table-color {
     background-color: #ffffff;
 }
@@ -13962,4 +13948,31 @@ textarea.form-control-lg {
     align-items: center;
     text-align: center;
     padding: 1rem;
+}
+
+.successMessage {
+    display: none;
+    padding: 1rem;
+    margin-top: -30px;
+    border: 1px solid #dc7b1f;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+address a {
+    color: inherit;
+    text-decoration: none;
+}
+
+address a:hover,
+address a:focus,
+address a:active {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
 }
