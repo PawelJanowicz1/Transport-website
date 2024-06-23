@@ -13909,6 +13909,38 @@ textarea.form-control-lg {
     font-size: 1.2em;
 }
 
+@media (max-width: 375px) {
+    .bigger-font-2 {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 430px) {
+    .bigger-font-2 {
+        font-size: 1.4em;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 667px) and (orientation: landscape) {
+    .bigger-font-2 {
+        font-size: 1.6em;
+    }
+}
+
+@media (min-width: 668px) and (max-width: 1023px) {
+    .bigger-font-2 {
+        font-size: 1.8em;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .bigger-font-2 {
+        font-size: 2em;
+    }
+}
+
+
 .custom-border-2 {
     border-bottom: 2px double #c36410;
 }
@@ -14096,6 +14128,15 @@ address a:active {
 @media (min-width: 932px) and (max-width: 950px) and (orientation: landscape) {
     .pricing-row {
         font-size: 4vw;
+    }
+    .pricing-top {
+        font-size: 4vw;
+    }
+}
+
+@media (min-width: 951px) and (orientation: landscape) {
+    .pricing-row {
+        font-size: 1.5vw;
     }
     .pricing-top {
         font-size: 4vw;
