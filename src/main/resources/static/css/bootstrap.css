@@ -13855,17 +13855,8 @@ textarea.form-control-lg {
 }
 
 .pricing {
-    width: 80%;
-    padding: 20px;
-}
-
-.pricing-top {
-    font-size: 24px;
-    width: 50%;
-}
-
-.pricing-row {
-    font-size: 18px;
+    width: 90%;
+    padding: 15px;
 }
 
 .textarea-style {
@@ -13960,12 +13951,6 @@ textarea.form-control-lg {
 @media (min-width: 932px) and (max-width: 950px) and (orientation: landscape) {
     .card-text-2.sizing {
         font-size: 1.3vw;
-    }
-}
-
-@media (min-width: 575px) {
-    .table td, .table th {
-        font-size: 1vw;
     }
 }
 
@@ -14072,5 +14057,41 @@ address a:active {
         font-size: 3vw;
         margin-right: 2rem;
         margin-left: 2rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .pricing-row {
+        font-size: 4.5vw;
+    }
+    .pricing-top {
+        font-size: 4.5vw;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 430px) {
+    .pricing-row {
+        font-size: 4vw;
+    }
+    .pricing-top {
+        font-size: 4vw;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 667px) and (orientation: landscape) {
+    .pricing-row {
+        font-size: 4vw;
+    }
+    .pricing-top {
+        font-size: 4vw;
+    }
+}
+
+@media (min-width: 932px) and (max-width: 950px) and (orientation: landscape) {
+    .pricing-row {
+        font-size: 4vw;
+    }
+    .pricing-top {
+        font-size: 4vw;
     }
 }
