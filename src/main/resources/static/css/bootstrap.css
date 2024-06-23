@@ -1311,9 +1311,11 @@ progress {
         width: 25%;
     }
 
-    .col-md-4 {
-        flex: 0 0 auto;
-        width: 33.33333333%;
+    @media (max-width: 992px) {
+        .col-md-4 {
+            flex: 0 0 auto;
+            width: 50%;
+        }
     }
 
     .col-md-5 {
@@ -13932,6 +13934,7 @@ textarea.form-control-lg {
         hyphens: auto;
         box-sizing: border-box;
         text-align: justify;
+        font-size: clamp(10px, 3vw, 16px);
     }
 }
 
