@@ -14103,7 +14103,7 @@ address a:active {
         font-size: 4.5vw;
     }
     .pricing-top {
-        font-size: 4.5vw;
+        font-size: 6vw;
     }
 }
 
@@ -14112,7 +14112,7 @@ address a:active {
         font-size: 4vw;
     }
     .pricing-top {
-        font-size: 4vw;
+        font-size: 6vw;
     }
 }
 
@@ -14121,13 +14121,22 @@ address a:active {
         font-size: 4vw;
     }
     .pricing-top {
-        font-size: 4vw;
+        font-size: 6vw;
     }
 }
 
 @media (min-width: 932px) and (max-width: 950px) and (orientation: landscape) {
     .pricing-row {
         font-size: 4vw;
+    }
+    .pricing-top {
+        font-size: 6vw;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 931px) and (orientation: landscape) {
+    .pricing-row {
+        font-size: 1.5vw;
     }
     .pricing-top {
         font-size: 4vw;
