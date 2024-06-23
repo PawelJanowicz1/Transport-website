@@ -13933,9 +13933,12 @@ textarea.form-control-lg {
 }
 
 @media (max-width: 575px) {
-    .card-text-2 {
-        font-size: 0.8em;
+    .card-text-2.sizing {
+        overflow-wrap: break-word;
         word-wrap: break-word;
+        hyphens: auto;
+        box-sizing: border-box;
+        text-align: justify;
     }
 }
 
@@ -13943,4 +13946,13 @@ textarea.form-control-lg {
     .table td, .table th {
         font-size: clamp(0.7em, 3vw, 0.9em);
     }
+}
+
+.card-body-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
 }
