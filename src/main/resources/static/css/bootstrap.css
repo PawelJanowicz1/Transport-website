@@ -14095,3 +14095,10 @@ address a:active {
         font-size: 4vw;
     }
 }
+
+.custom-border-3 {
+    border: 3px solid #c36410;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+}
