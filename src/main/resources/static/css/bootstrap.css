@@ -13980,17 +13980,180 @@ textarea.form-control-lg {
     }
 }
 
+@media (min-width: 668px) and (max-width: 931px) {
+    .card-text-2.sizing {
+        font-size: 2vw;
+    }
+}
+
 @media (min-width: 932px) and (max-width: 950px) and (orientation: landscape) {
     .card-text-2.sizing {
         font-size: 1.3vw;
     }
 }
 
-@media (min-width: 951px) {
+@media (min-width: 951px) and (max-width: 1919px) {
     .card-text-2.sizing {
-        font-size: 0.95vw;
+        font-size: 1vw;
     }
 }
+
+@media (min-width: 1920px) and (max-width: 2000px) {
+    .card-text-2.sizing {
+        font-size: 0.7vw;
+    }
+}
+
+@media (min-width: 2001px) and (max-width: 2154px) {
+    .card-text-2.sizing {
+        font-size: 0.65vw;
+    }
+}
+
+@media (min-width: 2155px) and (max-width: 2228px) {
+    .card-text-2.sizing {
+        font-size: 0.63vw;
+    }
+}
+
+@media (min-width: 2229px) and (max-width: 2302px) {
+    .card-text-2.sizing {
+        font-size: 0.61vw;
+    }
+}
+
+@media (min-width: 2303px) and (max-width: 2376px) {
+    .card-text-2.sizing {
+        font-size: 0.59vw;
+    }
+}
+
+@media (min-width: 2377px) and (max-width: 2450px) {
+    .card-text-2.sizing {
+        font-size: 0.57vw;
+    }
+}
+
+@media (min-width: 2451px) and (max-width: 2524px) {
+    .card-text-2.sizing {
+        font-size: 0.55vw;
+    }
+}
+
+@media (min-width: 2525px) and (max-width: 2598px) {
+    .card-text-2.sizing {
+        font-size: 0.53vw;
+    }
+}
+
+@media (min-width: 2599px) and (max-width: 2672px) {
+    .card-text-2.sizing {
+        font-size: 0.51vw;
+    }
+}
+
+@media (min-width: 2673px) and (max-width: 2746px) {
+    .card-text-2.sizing {
+        font-size: 0.49vw;
+    }
+}
+
+@media (min-width: 2747px) and (max-width: 2820px) {
+    .card-text-2.sizing {
+        font-size: 0.47vw;
+    }
+}
+
+@media (min-width: 2821px) and (max-width: 2894px) {
+    .card-text-2.sizing {
+        font-size: 0.45vw;
+    }
+}
+
+@media (min-width: 2895px) and (max-width: 2968px) {
+    .card-text-2.sizing {
+        font-size: 0.43vw;
+    }
+}
+
+@media (min-width: 2969px) and (max-width: 3042px) {
+    .card-text-2.sizing {
+        font-size: 0.41vw;
+    }
+}
+
+@media (min-width: 3043px) and (max-width: 3116px) {
+    .card-text-2.sizing {
+        font-size: 0.39vw;
+    }
+}
+
+@media (min-width: 3117px) and (max-width: 3190px) {
+    .card-text-2.sizing {
+        font-size: 0.37vw;
+    }
+}
+
+@media (min-width: 3191px) and (max-width: 3264px) {
+    .card-text-2.sizing {
+        font-size: 0.35vw;
+    }
+}
+
+@media (min-width: 3265px) and (max-width: 3338px) {
+    .card-text-2.sizing {
+        font-size: 0.33vw;
+    }
+}
+
+@media (min-width: 3339px) and (max-width: 3412px) {
+    .card-text-2.sizing {
+        font-size: 0.31vw;
+    }
+}
+
+@media (min-width: 3413px) and (max-width: 3486px) {
+    .card-text-2.sizing {
+        font-size: 0.40vw;
+    }
+}
+
+@media (min-width: 3487px) and (max-width: 3560px) {
+    .card-text-2.sizing {
+        font-size: 0.27vw;
+    }
+}
+
+@media (min-width: 3561px) and (max-width: 3634px) {
+    .card-text-2.sizing {
+        font-size: 0.25vw;
+    }
+}
+
+@media (min-width: 3635px) and (max-width: 3708px) {
+    .card-text-2.sizing {
+        font-size: 0.23vw;
+    }
+}
+
+@media (min-width: 3709px) and (max-width: 3782px) {
+    .card-text-2.sizing {
+        font-size: 0.21vw;
+    }
+}
+
+@media (min-width: 3783px) and (max-width: 3839px) {
+    .card-text-2.sizing {
+        font-size: 0.19vw;
+    }
+}
+
+@media (min-width: 3840px) {
+    .card-text-2.sizing {
+        font-size: 0.36vw;
+    }
+}
+
 
 .card-body-2 {
     display: flex;
