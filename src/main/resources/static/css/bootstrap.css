@@ -13992,6 +13992,18 @@ textarea.form-control-lg {
     }
 }
 
+@media (max-width: 844px) and (orientation: landscape) {
+    .card-text-2.sizing {
+        font-size: 1.5vw;
+    }
+}
+
+@media (min-width: 845px) and (orientation: landscape) {
+    .card-text-2.sizing {
+        font-size: 1.3vw;
+    }
+}
+
 @media (min-width: 951px) and (max-width: 1919px) {
     .card-text-2.sizing {
         font-size: 1vw;
