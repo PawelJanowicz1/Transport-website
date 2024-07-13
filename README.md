@@ -8,7 +8,7 @@ Users can leave their details in a contact form or get in touch via phone.
 Users can view the company's address.
 
 You can easily access this website at www.dobrypiasek.pl
-( This website is hosted on my private VPS server )
+( This website is hosted on VPS server )
 
 ## :hammer_and_wrench: Used Technologies
 
