@@ -2,11 +2,11 @@
 
 Users visiting www.dobrypiasek.pl can explore various features:
 
-They can access detailed information about the company.
-They have the option to browse through a gallery showcasing product images.
-Users can conveniently leave their details using a contact form or reach out via phone.
-The company's address is readily accessible.
-This website, hosted on a VPS server, has been created for my client.
+* They can access detailed information about the company.
+* They have the option to browse through a gallery showcasing product images.
+* Users can conveniently leave their details using a contact form or reach out via phone.
+* The company's address is readily accessible.
+* This website, hosted on a VPS server, has been created for my client.
 
 You can visit this site at www.dobrypiasek.pl
 
