@@ -1,14 +1,14 @@
 ## :bookmark_tabs: About This Project
 
+Users visiting www.dobrypiasek.pl can explore various features:
 
+They can access detailed information about the company.
+They have the option to browse through a gallery showcasing product images.
+Users can conveniently leave their details using a contact form or reach out via phone.
+The company's address is readily accessible.
+This website, hosted on a VPS server, has been created for my client.
 
-Users can read information about the company.
-Users can browse through the gallery of product images.
-Users can leave their details in a contact form or get in touch via phone.
-Users can view the company's address.
-
-You can easily access this website at www.dobrypiasek.pl
-( This website is hosted on VPS server )
+You can visit this site at www.dobrypiasek.pl
 
 ## :hammer_and_wrench: Used Technologies
 
