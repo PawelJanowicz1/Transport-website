@@ -58,9 +58,10 @@ async function sendContactForm() {
         });
 
         if (response.ok) {
-            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('contactForm').remove();
+            const formContainer = document.getElementsByClassName('form-container')[0];
+            formContainer.classList.remove('form-container', 'custom-border');
             document.getElementsByClassName('successMessage')[0].style.display = 'block';
-            document.getElementsByClassName('form-container')[0].classList.remove('custom-border');
         } else {
             const errorMessage = await response.text();
             alert('Błąd podczas wysyłania emaila: ' + errorMessage);
