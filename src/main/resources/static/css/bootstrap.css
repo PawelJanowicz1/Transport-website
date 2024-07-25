@@ -13760,7 +13760,15 @@ textarea.form-control-lg {
 }
 
 .background-image {
-    background-color: #aa5709;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 
 .background-image::before {
@@ -13786,8 +13794,9 @@ textarea.form-control-lg {
     margin: 0 auto;
     padding: 20px;
     background-color: gray(0);
-    border-radius: 10px;
+    border-radius: 20px;
     color: white;
+    background-color: #c36410;
 }
 
 .pricing-table {
@@ -13826,7 +13835,7 @@ textarea.form-control-lg {
 }
 
 .btn-custom {
-    background-color: #c36410;
+    background-color: #dd8b15;
     color: white;
     border-radius: 25px;
     padding: 0.75rem 1.5rem;
@@ -13834,7 +13843,7 @@ textarea.form-control-lg {
 }
 
 .btn-custom:hover {
-    background-color: #dd8b15;
+    background-color: #f6b67d;
 }
 
 .sizing {
@@ -13867,6 +13876,16 @@ textarea.form-control-lg {
 
 .table-color {
     background-color: #ffffff;
+}
+
+.table-color-2 {
+    background-color: #aa5709;
+}
+
+.table-color-3 {
+    background-color: #ffffff;
+    border: 2px solid #000;
+    border-radius: 15px;
 }
 
 .custom-border {
@@ -14354,4 +14373,9 @@ address a:active {
 
 .navbar-custom .navbar-nav .nav-link {
     font-size: 2.2vw;
+}
+
+.font-family-2 {
+    font-family: "Copperplate", "Arial", serif;
+    color: white;
 }
