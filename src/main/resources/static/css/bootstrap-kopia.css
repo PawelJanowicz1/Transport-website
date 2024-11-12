@@ -13842,11 +13842,6 @@ textarea.form-control-lg {
     transition: background-color 0.3s;
 }
 
-.btn-custom:disabled {
-    background-color: #b56e12;
-    cursor: not-allowed;
-}
-
 .btn-custom:hover {
     background-color: #f6b67d;
 }
@@ -14203,7 +14198,7 @@ textarea.form-control-lg {
 .successMessage {
     display: none;
     padding: 1rem;
-    margin-top: -50px;
+    margin-top: -30px;
     border: 1px solid #dc7b1f;
     border-radius: 5px;
     background-color: #ffffff;
@@ -14212,10 +14207,6 @@ textarea.form-control-lg {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.successMessage.show {
-    display: block;
 }
 
 address a {
@@ -14387,22 +14378,4 @@ address a:active {
 .font-family-2 {
     font-family: "Copperplate", "Arial", serif;
     color: white;
-}
-
-.btn-disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-    color: #666;
-}
-
-button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-    color: #666;
-}
-
-
-button.btn-disabled {
-    background-color: #ccc;
-    color: #666;
 }

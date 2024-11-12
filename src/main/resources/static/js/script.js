@@ -1,72 +1,67 @@
 document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contactForm');
-    contactForm.addEventListener('submit', async (event) => { // Dodano 'async' tutaj
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+
+    contactForm.addEventListener('submit', async (event) => {
         event.preventDefault();
         await sendContactForm();
     });
-});
 
+    async function sendContactForm() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phoneNumber = document.getElementById('phoneNumber').value;
+        const message = document.getElementById('message').value;
 
-function validateForm(name, email, phoneNumber, message) {
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const phonePattern = /^\d{9}$/;
+        disableSubmitButton(submitButton);
 
-    if (!name.trim()) {
-        alert('Pole "Imię" nie może być puste.');
-        return false;
-    }
-    if (!emailPattern.test(email)) {
-        alert('Pole "Email" musi zawierać poprawny adres email.');
-        return false;
-    }
-    if (phoneNumber && !phonePattern.test(phoneNumber)) {
-        alert('Pole "Numer telefonu" musi zawierać 9 cyfr.');
-        return false;
-    }
-    if (!message.trim()) {
-        alert('Pole "Wiadomość" nie może być puste.');
-        return false;
-    }
-    return true;
-}
+        const payload = {
+            name: name,
+            email: email,
+            phoneNumber: phoneNumber ? phoneNumber : null,
+            message: message
+        };
 
-async function sendContactForm() {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const phoneNumber = document.getElementById('phoneNumber').value;
-    const message = document.getElementById('message').value;
+        try {
+            const response = await fetch('https://dobrypiasek.pl/email/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json; charset=UTF-8',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            });
 
-    if (!validateForm(name, email, phoneNumber, message)) {
-        return;
-    }
-
-    const payload = {
-        name: name,
-        email: email,
-        phoneNumber: phoneNumber ? phoneNumber : null,
-        message: message
-    };
-
-    try {
-        const response = await fetch('https://dobrypiasek.pl/email/send-email', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json; charset=UTF-8',
-                'Accept': 'application/json'
-            },
-            body: JSON.stringify(payload)
-        });
-
-        if (response.ok) {
-            document.getElementById('contactForm').remove();
-            const formContainer = document.getElementsByClassName('form-container')[0];
-            formContainer.classList.remove('form-container', 'custom-border');
-            document.getElementsByClassName('successMessage')[0].style.display = 'block';
-        } else {
-            const errorMessage = await response.text();
-            alert('Błąd podczas wysyłania emaila: ' + errorMessage);
+            if (response.ok) {
+                document.getElementById('contactForm').style.display = 'none';
+                const successMessage = document.querySelector('.successMessage');
+                successMessage.classList.add('show');
+            }
+            else {
+                const errorMessage = await response.text();
+                alert('Błąd podczas wysyłania emaila: ' + errorMessage);
+            }
+        } catch (error) {
+            alert('Wystąpił błąd: ' + error.message);
+        } finally {
+            enableSubmitButton(submitButton);
         }
-    } catch (error) {
-        alert('Wystąpił błąd: ' + error.message);
     }
-}
+
+    function disableSubmitButton(button) {
+        button.disabled = true;
+        button.innerText = 'Wysyłanie...';
+        const spinner = button.querySelector('.spinner-border');
+        if (spinner) {
+            spinner.style.display = 'inline-block';
+        }
+    }
+
+    function enableSubmitButton(button) {
+        button.disabled = false;
+        button.innerText = 'Wyślij';
+        const spinner = button.querySelector('.spinner-border');
+        if (spinner) {
+            spinner.style.display = 'none';
+        }}
+});
