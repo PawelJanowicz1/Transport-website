@@ -4,8 +4,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
     contactForm.addEventListener('submit', async (event) => {
         event.preventDefault();
-        await sendContactForm();
+        if (validateForm()) {
+            await sendContactForm();
+        }
     });
+
+    function validateForm() {
+        let isValid = true;
+
+        const nameInput = document.getElementById('name');
+        const phoneNumberInput = document.getElementById('phoneNumber');
+        const emailInput = document.getElementById('email');
+        const messageInput = document.getElementById('message');
+
+        const namePattern = /^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+$/;
+        if (!nameInput.value || nameInput.value.length > 12 || !namePattern.test(nameInput.value)) {
+            isValid = false;
+            alert('Proszę wprowadzić poprawne imię (maksymalnie 12 liter, bez cyfr i znaków specjalnych).');
+        }
+
+        const phonePattern = /^(?:\+48\s?\d{3}\s?\d{3}\s?\d{3}|\+48\d{9}|\d{9}|\d{3}\s?\d{3}\s?\d{3})$/;
+        if (!phoneNumberInput.value || !phonePattern.test(phoneNumberInput.value)) {
+            isValid = false;
+            alert('Proszę wprowadzić poprawny numer telefonu.');
+        }
+
+        if (!emailInput.value || emailInput.value.length > 25 || !validateEmail(emailInput.value)) {
+            isValid = false;
+            alert('Proszę wprowadzić poprawny adres email (maksymalnie 25 znaków).');
+        }
+
+        const messagePattern = /^[\w\s.,;:'"\-ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+$/;
+        if (!messageInput.value || messageInput.value.length > 500 || !messagePattern.test(messageInput.value)) {
+            isValid = false;
+            alert('Proszę wprowadzić poprawną wiadomość (maksymalnie 500 znaków).');
+        }
+
+        return isValid;
+    }
+
+    function validateEmail(email) {
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailPattern.test(email);
+    }
 
     async function sendContactForm() {
         const name = document.getElementById('name').value;
@@ -63,5 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const spinner = button.querySelector('.spinner-border');
         if (spinner) {
             spinner.style.display = 'none';
-        }}
+        }
+    }
 });
