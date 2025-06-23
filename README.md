@@ -22,22 +22,14 @@ Users visiting dobrypiasek can explore various features:
 
 ## :camera: Screenshots
 
-Landing page      
+Landing page | About us  
+:-----------:|:---------:  
+![Landing page](src/main/resources/static/images/landing-page.png) | ![About us](src/main/resources/static/images/about.png)  
 
-![Landing page](src/main/resources/static/images/landing-page.png)
+What we offer | Pricing  
+:-------------:|:----------:  
+![What we offer](src/main/resources/static/images/offer.png) | ![Pricing](src/main/resources/static/images/pricing.png)  
 
-About us   
-
-![About us](src/main/resources/static/images/about.png)
-
-What we offer
-
-![What we offer](src/main/resources/static/images/offer.png)
-
-Pricing
-
-![Pricing](src/main/resources/static/images/pricing.png)
-
-Contact form    
-
-![Contaact foorm](src/main/resources/static/images/form.png)
+Contact form  
+:-----------:  
+![Contact form](src/main/resources/static/images/form.png)  
